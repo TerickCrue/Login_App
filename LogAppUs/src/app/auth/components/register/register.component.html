@@ -1,0 +1,20 @@
+<form [formGroup]="formularioRegister" (ngSubmit)="register()">
+    <div class="form-field">
+      <input placeholder="Username" formControlName="usname" required/>
+    </div>
+
+    <div class="form-field">
+        <input placeholder="id" formControlName="id" required/>
+      </div>
+    
+    <div class="form-field">
+      <input type="password" placeholder="Password"  formControlName="pass" required/>                         
+    </div>
+    
+    <div class="form-field">
+      <button class="btn" type="submit">Register</button>
+    </div>
+    <div class="form-field">
+        <button class="btn-sec" routerLink="/auth/login">Log in</button>
+    </div>
+</form>
